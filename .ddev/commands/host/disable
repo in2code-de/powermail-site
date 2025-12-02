@@ -2,7 +2,7 @@
 
 ## Description: Enables the EXT:powermail* plugin (Note: Pro EXT:powermail plugins must exist in packages/ext-<powermail-plugin-name>)
 ## Usage: powermail:disable <powermail-plugin-name>
-## Example: ddev powermail:disable solrfal
+## Example: ddev powermail:disable powermail_cond
 
 
 

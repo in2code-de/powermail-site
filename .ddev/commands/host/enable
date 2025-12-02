@@ -2,9 +2,7 @@
 
 ## Description: Enables the EXT:Powermail* plugin (Note: Pro- and EXT:Powermail plugins must exist in packages/ext-<powermail-plugin-name>)
 ## Usage: powermail:enable <powermail-plugin-name>
-## Example: ddev powermail:enable powermail-pro
-
-
+## Example: ddev powermail:enable powermail_cond
 
 EXT_NAME=$1
 LOCAL_EXT_POWERMAIL_PLUGIN_PATH="packages/ext-$EXT_NAME"
