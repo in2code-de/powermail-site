@@ -1,6 +1,8 @@
 base: 'https://powermail-ddev-site.ddev.site/'
 dependencies:
   - bootstrap-package/full
+  - in2code/powermail-main
+  - in2code/powermail-marketing
 languages:
   -
     title: German
