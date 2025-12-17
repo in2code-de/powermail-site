@@ -1,4 +1,4 @@
-base: 'https://powermail-ddev-site.ddev.site/'
+base: 'https://powermail-site.ddev.site/'
 dependencies:
   - bootstrap-package/full
   - in2code/powermail-main

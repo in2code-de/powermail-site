@@ -11,7 +11,7 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
         'SYS' => [
             'errorHandlerErrors' => E_WARNING | E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE | E_RECOVERABLE_ERROR | E_DEPRECATED | E_USER_DEPRECATED,
             'exceptionalErrors' => E_WARNING | E_RECOVERABLE_ERROR | E_DEPRECATED | E_USER_DEPRECATED,
-            'trustedHostsPattern' => 'localhost|powermail-ddev-site.ddev.site',
+            'trustedHostsPattern' => 'localhost|powermail-site.ddev.site',
         ]
     ]
 );
