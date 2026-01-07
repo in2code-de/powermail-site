@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## Description: Renders the documentation of an extension.
+## Usage: powermail:render-docs <powermail-plugin-name>
+## Example: ddev powermail:render-docs powermail
+
+EXT_POWERMAIL_PLUGIN_NAME=$1
+
+if [[ -z "$EXT_POWERMAIL_PLUGIN_NAME" ]]; then
+  EXT_POWERMAIL_PLUGIN_NAME="powermail"
+fi
+
+docker run --rm --pull always -v $(pwd)/packages/ext-"$EXT_POWERMAIL_PLUGIN_NAME":/project -it ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
