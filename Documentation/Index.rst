@@ -2,9 +2,9 @@
 
 .. _start:
 
-===================
-Powermail DDEV Site
-===================
+==========================
+Powermail Development Site
+==========================
 
 :Version:
    0.0.1
@@ -16,7 +16,7 @@ Powermail DDEV Site
     Marcus Schwemer
 
 :Repository:
-   https://github.com/in2code-de/powermail-ddev-site
+   https://github.com/in2code-de/powermail-site
 
 :Community-Support:
    https://typo3.slack.com/archives/C06P2DQG2
@@ -32,7 +32,10 @@ contribute and test EXT:powermail and related extensions.
 ----
 
 .. only:: html
-    On this page: :ref:`quickstart` | :ref:`features` | :ref:`credits` |
+
+    **On this page**
+
+    :ref:`quickstart` | :ref:`features` | :ref:`credits` |
 
 ----
 
