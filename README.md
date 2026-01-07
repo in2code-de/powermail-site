@@ -1,4 +1,4 @@
-# Powermail Development Environment
+# Powermail Development Site
 
-This repo will contain an environment to develop EXT:powermail and related
-extensions.
+Please refer to the documentation in this repo:
+[Documentation](https://github.com/in2code-de/powermail-site/tree/main/Documentation/Index.rst)
