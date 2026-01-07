@@ -35,6 +35,7 @@
 		"typo3/cms-core": "^13.4"
 	},
 	"require-dev": {
+		"helmich/typo3-typoscript-lint": "^3.3",
 		"phpstan/phpstan": "^1.10",
 		"phpstan/phpstan-phpunit": "^1.3",
 		"phpunit/phpunit": "^11.4",
@@ -68,8 +69,23 @@
 		"tests:setup": [
 			"@composer install"
 		],
-		"tests:powermail_cond:php-cs-fixer": [
+		"powermail_cond:test:php-cs-fixer": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail_cond/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail_cond "
+		],
+		"powermail:test:phpcs": [
+			"php-cs-fixer fix --dry-run --config=packages/ext-powermail/.project/tests/.php-cs-fixer.php --diff"
+		],
+		"powermail:test:phplint": [
+			"find *.php packages/ext-powermail/Classes packages/ext-powermail/Configuration packages/ext-powermail/Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
+		],
+		"powermail:test:phpstan": [
+			"phpstan analyse -c packages/ext-powermail/.project/tests/phpstan.neon"
+		],
+		"powermail:test:phpstan:generate-baseline": [
+			"phpstan analyse -c packages/ext-powermail/.project/tests/phpstan.neon --generate-baseline packages/ext-powermail/.project/tests/phpstan-baseline.neon"
+		],
+		"powermail:test:typoscript": [
+			"typoscript-lint --config=packages/ext-powermail/.project/tests/typoscript-lint.yml packages/ext-powermail"
 		]
 	}
 }
