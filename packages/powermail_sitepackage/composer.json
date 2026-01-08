@@ -44,6 +44,22 @@
       "extension-key": "powermail_sitepackage"
     }
   },
+  "autoload": {
+    "psr-4": {
+      "In2code\\PowermailSitepackage\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "In2code\\PowermailSitepackage\\Tests\\": "Tests"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  },
   "scripts": {
     "setup": [
       "npm install"

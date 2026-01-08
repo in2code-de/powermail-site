@@ -1,1 +1,9 @@
 @import 'EXT:powermail/Configuration/TypoScript/Main/setup.typoscript'
+
+plugin.tx_powermail.settings.setup {
+  finishers {
+    1 {
+      class = In2code\PowermailSitepackage\Finisher\DoSomethingFinisher
+    }
+  }
+}
