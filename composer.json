@@ -70,6 +70,15 @@
 		"powermail-pro:test:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail-pro/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail-pro"
 		],
+		"powermail-pro:test:phpstan": [
+			"phpstan analyse -c packages/ext-powermail-pro/.project/tests/phpstan.neon"
+		],
+		"powermail-pro:test:phpstan:generate-baseline": [
+			"phpstan analyse -c packages/ext-powermail-pro/.project/tests/phpstan.neon --generate-baseline packages/ext-powermail-pro/.project/tests/phpstan-baseline.neon"
+		],
+		"powermail-pro:test:typoscript": [
+			"typoscript-lint --config=packages/ext-powermail-pro/.project/tests/typoscript-lint.yml packages/ext-powermail-pro"
+		],
 		"powermail_cond:test:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail_cond/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail_cond"
 		],
