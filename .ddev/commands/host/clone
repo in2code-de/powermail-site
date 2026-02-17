@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Description: Clones the plugin of TYPO3 Solr into packages/ folder and tries to activate it.
+## Description: Clones the plugin of TYPO3 Powermail into packages/ folder and tries to activate it.
 ## Usage: powermail:clone <powermail-plugin-name>
 ## Example: ddev powermail:clone powermail_cond
 
@@ -10,7 +10,7 @@ if [[ -z "$EXT_POWERMAIL_PLUGIN_NAME" ]]; then
   EXT_POWERMAIL_PLUGIN_NAME="powermail"
 fi
 
-if [ ! -d "packages/ext-$EXT_POWERMAIL_PLUGIN_NAME" ];then
+if [ ! -d "packages/ext-$EXT_POWERMAIL_PLUGIN_NAME" ]; then
   git clone git@github.com:in2code-de/"$EXT_POWERMAIL_PLUGIN_NAME".git packages/ext-"$EXT_POWERMAIL_PLUGIN_NAME" \
   || git clone https://github.com/in2code-de/"$EXT_POWERMAIL_PLUGIN_NAME".git packages/ext-"$EXT_POWERMAIL_PLUGIN_NAME"
 else
