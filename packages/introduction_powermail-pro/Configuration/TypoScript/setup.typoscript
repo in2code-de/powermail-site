@@ -1,0 +1,12 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:powermail_pro/Configuration/Sets/Frontend/setup.typoscript'
+@import 'EXT:powermail_pro/Configuration/Sets/Ratelimiter/setup.typoscript'
+
+##############
+#### MODS ####
+##############
+
+
+
