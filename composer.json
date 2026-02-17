@@ -69,45 +69,45 @@
 		"tests:setup": [
 			"@composer install"
 		],
-		"powermail-pro:test:phpcs": [
+		"powermail-pro:qa:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail-pro/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail-pro"
 		],
-		"powermail-pro:test:phplint": [
+		"powermail-pro:qa:phplint": [
 			"find *.php packages/ext-powermail-pro/Classes packages/ext-powermail-pro/Configuration packages/ext-powermail-pro/Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
 		],
-		"powermail-pro:test:phpmd": [
+		"powermail-pro:qa:phpmd": [
 			"phpmd packages/ext-powermail-pro/Classes/ text packages/ext-powermail-pro/.project/tests/phpmd.xml"
 		],
-		"powermail-pro:test:phpmd:generate-baseline": [
+		"powermail-pro:qa:phpmd:generate-baseline": [
 			"phpmd packages/ext-powermail-pro/Classes/ text packages/ext-powermail-pro/.project/tests/phpmd.xml --generate-baseline --baseline-file packages/ext-powermail-pro/.project/tests/phpmd.baseline.xml"
 		],
-		"powermail-pro:test:phpstan": [
+		"powermail-pro:qa:phpstan": [
 			"phpstan analyse -c packages/ext-powermail-pro/.project/tests/phpstan.neon"
 		],
-		"powermail-pro:test:phpstan:generate-baseline": [
+		"powermail-pro:qa:phpstan:generate-baseline": [
 			"phpstan analyse -c packages/ext-powermail-pro/.project/tests/phpstan.neon --generate-baseline packages/ext-powermail-pro/.project/tests/phpstan-baseline.neon"
 		],
-		"powermail-pro:test:typoscript": [
+		"powermail-pro:qa:typoscript": [
 			"typoscript-lint --config=packages/ext-powermail-pro/.project/tests/typoscript-lint.yml packages/ext-powermail-pro"
 		],
 
-		"powermail_cond:test:phpcs": [
+		"powermail_cond:qa:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail_cond/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail_cond"
 		],
 
-		"powermail:test:phpcs": [
+		"powermail:qa:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail/.project/tests/.php-cs-fixer.php --diff"
 		],
-		"powermail:test:phplint": [
+		"powermail:qa:phplint": [
 			"find *.php packages/ext-powermail/Classes packages/ext-powermail/Configuration packages/ext-powermail/Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
 		],
-		"powermail:test:phpstan": [
+		"powermail:qa:phpstan": [
 			"phpstan analyse -c packages/ext-powermail/.project/tests/phpstan.neon"
 		],
-		"powermail:test:phpstan:generate-baseline": [
+		"powermail:qa:phpstan:generate-baseline": [
 			"phpstan analyse -c packages/ext-powermail/.project/tests/phpstan.neon --generate-baseline packages/ext-powermail/.project/tests/phpstan-baseline.neon"
 		],
-		"powermail:test:typoscript": [
+		"powermail:qa:typoscript": [
 			"typoscript-lint --config=packages/ext-powermail/.project/tests/typoscript-lint.yml packages/ext-powermail"
 		]
 	}
