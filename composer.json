@@ -75,7 +75,10 @@
 			"find *.php packages/ext-powermail-pro/Classes packages/ext-powermail-pro/Configuration packages/ext-powermail-pro/Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
 		],
 		"powermail-pro:test:phpmd": [
-			"phpmd packages/ext-powermail-pro/Classes/ text packages/ext-powermail-pro/.project/tests/.phpmd.xml"
+			"phpmd packages/ext-powermail-pro/Classes/ text packages/ext-powermail-pro/.project/tests/phpmd.xml"
+		],
+		"powermail-pro:test:phpmd:generate-baseline": [
+			"phpmd packages/ext-powermail-pro/Classes/ text packages/ext-powermail-pro/.project/tests/phpmd.xml --generate-baseline --baseline-file packages/ext-powermail-pro/.project/tests/phpmd.baseline.xml"
 		],
 		"powermail-pro:test:phpstan": [
 			"phpstan analyse -c packages/ext-powermail-pro/.project/tests/phpstan.neon"
