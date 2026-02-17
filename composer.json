@@ -67,8 +67,11 @@
 		"tests:setup": [
 			"@composer install"
 		],
-		"powermail_cond:test:php-cs-fixer": [
-			"php-cs-fixer fix --dry-run --config=packages/ext-powermail_cond/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail_cond "
+		"powermail-pro:test:phpcs": [
+			"php-cs-fixer fix --dry-run --config=packages/ext-powermail-pro/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail-pro"
+		],
+		"powermail_cond:test:phpcs": [
+			"php-cs-fixer fix --dry-run --config=packages/ext-powermail_cond/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail_cond"
 		],
 		"powermail:test:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail/.project/tests/.php-cs-fixer.php --diff"
