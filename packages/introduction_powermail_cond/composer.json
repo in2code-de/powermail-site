@@ -10,7 +10,7 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "introduction_news"
+			"extension-key": "introduction_powermail_cond"
 		}
 	}
 }
