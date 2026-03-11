@@ -19,12 +19,12 @@ if [[ ! -d "packages/introduction_""$EXT_NAME" ]]; then
 fi
 
 
-LOCAL_EXT_SOLR_PLUGIN=""
-if [[ -d "$LOCAL_EXT_SOLR_PLUGIN_PATH"  ]]; then
-  LOCAL_EXT_SOLR_PLUGIN="in2code/$EXT_NAME"
+LOCAL_EXT_POWERMAIL_PLUGIN=""
+if [[ -d "$LOCAL_EXT_POWERMAIL_PLUGIN_PATH"  ]]; then
+  LOCAL_EXT_POWERMAIL_PLUGIN="in2code/$EXT_NAME"
 fi
 
-echo "Uninstalling $LOCAL_EXT_SOLR_PLUGIN"
+echo "Uninstalling $LOCAL_EXT_POWERMAIL_PLUGIN"
 # shellcheck disable=SC2086
 if ! ddev composer remove "in2code/introduction-$EXT_NAME" $LOCAL_EXT_POWERMAIL_PLUGIN ; then
   EXECUTED_COMMAND="composer remove \"in2code/introduction-$EXT_NAME\" $LOCAL_EXT_POWERMAIL_PLUGIN"
