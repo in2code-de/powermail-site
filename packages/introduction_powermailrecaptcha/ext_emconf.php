@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Powermail development site :: Powermail_cond ',
-    'description' => 'Powermail development site : Powermail_cond',
+    'title' => 'Powermail development site :: Powermail Recaptcha ',
+    'description' => 'Powermail development site : Powermail Recaptcha',
     'category' => 'distribution',
     'constraints' => [
         'depends' => [

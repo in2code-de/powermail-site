@@ -8,6 +8,7 @@ nbproject
 !/packages/powermail_sitepackage
 !/packages/introduction_powermail_cond
 !/packages/introduction_powermail-pro
+!/packages/introduction_powermailrecaptcha
 
 /public/*
 
