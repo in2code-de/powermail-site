@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## Description: Clones the plugin of TYPO3 Powermail into packages/ folder and tries to activate it.
-## Usage: powermail:clone <powermail-plugin-name>
-## Example: ddev powermail:clone powermail_cond
+## Usage: clone <powermail-plugin-name>
+## Example: ddev clone powermail_cond
 
 EXT_POWERMAIL_PLUGIN_NAME=$1
 
