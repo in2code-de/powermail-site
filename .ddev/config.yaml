@@ -18,8 +18,6 @@ composer_version: "2"
 web_environment: []
 corepack_enable: false
 hooks:
-  pre-start:
-    - exec-host: ./.ddev/commands/host/clone powermail
   post-start:
     # setup system cron and run TYPO3 Scheduler tasks with ENV variables provided by ddev.
     - exec:
