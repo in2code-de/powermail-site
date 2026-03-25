@@ -26,11 +26,11 @@
 		"ext-libxml": "*",
 		"ext-pdo": "*",
 		"ext-simplexml": "*",
-		"bk2k/bootstrap-package": "^15.0.0",
-		"helhum/typo3-console": "~8.2.2",
-		"in2code/powermail": "13.0 || @dev",
-		"in2code/powermail-sitepackage": "13.0 || @dev",
-		"typo3/cms-core": "^13.4"
+		"bk2k/bootstrap-package": "^16.0.0",
+		"helhum/typo3-console": "^8.3",
+		"in2code/powermail": "^14.0 || @dev",
+		"in2code/powermail-sitepackage": "14.0 || @dev",
+		"typo3/cms-core": "^14.1"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "^3.94",
