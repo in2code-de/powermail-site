@@ -1,0 +1,11 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:powermail_cleaner/Configuration/TypoScript/setup.typoscript'
+
+##############
+#### MODS ####
+##############
+
+
+
