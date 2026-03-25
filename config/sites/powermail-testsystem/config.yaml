@@ -1,4 +1,4 @@
-base: 'https://powermail-site.ddev.site/'
+base: 'https://powermail-site-v13.ddev.site/'
 dependencies:
   - bootstrap-package/full
   - in2code/powermail-main
@@ -16,7 +16,7 @@ languages:
     hreflang: de-DE
     direction: ''
     flag: de
-    websiteTitle: 'EXT:powermail Entwicklungspaket'
+    websiteTitle: 'EXT:powermail v13 Entwicklungspaket'
   -
     title: English
     enabled: true
@@ -32,4 +32,4 @@ languages:
     direction: ''
     flag: us
 rootPageId: 1
-websiteTitle: 'EXT:powermail development package'
+websiteTitle: 'EXT:powermail v13 development package'
