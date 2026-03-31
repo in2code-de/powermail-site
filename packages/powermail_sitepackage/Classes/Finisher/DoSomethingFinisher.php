@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace In2code\PowermailSitepackage\Finisher;
 
-use In2code\Powermail\Domain\Model\Mail;
 use In2code\Powermail\Finisher\AbstractFinisher;
 
 class DoSomethingFinisher extends AbstractFinisher

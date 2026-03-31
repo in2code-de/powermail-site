@@ -38,7 +38,7 @@
 		"phpmd/phpmd": "^2.15",
 		"phpstan/phpstan": "^2.1",
 		"phpstan/phpstan-phpunit": "^2.0",
-		"phpunit/phpunit": "^11.4",
+		"ssch/typo3-rector": "*",
 		"typo3/coding-standards": "v0.8.0",
 		"typo3/testing-framework": "^9.0.1"
 	},

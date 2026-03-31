@@ -4,7 +4,9 @@
 
 declare(strict_types=1);
 
-defined('TYPO3') or die('Access denied.');
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') || die('Access denied.');
 
 /***************
  * Add default RTE configuration
@@ -12,10 +14,10 @@ defined('TYPO3') or die('Access denied.');
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['powermail_sitepackage'] = 'EXT:powermail_sitepackage/Configuration/RTE/Default.yaml';
 
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('
+ExtensionManagementUtility::addTypoScriptConstants('
   @import \'EXT:powermail_sitepackage/Configuration/TypoScript/constants.typoscript\'
 ');
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup('
+ExtensionManagementUtility::addTypoScriptSetup('
   @import \'EXT:powermail_sitepackage/Configuration/TypoScript/setup.typoscript\'
 ');

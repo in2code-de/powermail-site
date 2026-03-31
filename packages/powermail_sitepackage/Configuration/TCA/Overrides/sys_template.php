@@ -1,4 +1,6 @@
 <?php
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') || die();
 
 call_user_func(function()
@@ -8,7 +10,7 @@ call_user_func(function()
      */
     $extensionKey = 'powermail_sitepackage';
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
         'Powermail Sitepackage'
