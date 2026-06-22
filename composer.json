@@ -102,6 +102,9 @@
 		"powermail:qa:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail/.project/tests/.php-cs-fixer.php --diff"
 		],
+		"powermail:qa:phpcs:fix-it": [
+			"php-cs-fixer fix --config=packages/ext-powermail/.project/tests/.php-cs-fixer.php --diff"
+		],
 		"powermail:qa:phplint": [
 			"find *.php packages/ext-powermail/Classes packages/ext-powermail/Configuration packages/ext-powermail/Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
 		],
