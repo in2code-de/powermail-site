@@ -44,7 +44,8 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"TYPO3\\CMS\\Core\\Tests\\": "vendor/typo3/cms-core/Tests"
+			"TYPO3\\CMS\\Core\\Tests\\": "vendor/typo3/cms-core/Tests",
+			"In2code\\Powermail\\Tests\\": "packages/ext-powermail/Tests"
 		}
 	},
 	"scripts-descriptions": {
@@ -95,6 +96,9 @@
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail_cond/.project/tests/.php-cs-fixer.php --diff packages/ext-powermail_cond"
 		],
 
+		"powermail:qa:phpunit": [
+			"phpunit -c packages/ext-powermail/phpunit.xml.dist"
+		],
 		"powermail:qa:phpcs": [
 			"php-cs-fixer fix --dry-run --config=packages/ext-powermail/.project/tests/.php-cs-fixer.php --diff"
 		],
